@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${DB_HOST_MAIN}:${DB_PORT_MAIN}/${DB_NAME_MAIN}?createDatabaseIfNotExist=true
+    username: ${DB_USER_MAIN}
+    password: ${DB_PASSWORD_MAIN}
+
+springdoc:
+  swagger-ui:
+    enabled: true
+
+cors:
+  allowedOrigins: ${CLIENT_URL_MAIN}
+
+logging:
+  level:
+    com.backend_project_template: INFO
